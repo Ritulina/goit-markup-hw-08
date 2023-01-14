@@ -1,0 +1,108 @@
+.header {
+    &__section {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        border-bottom: 1px solid var(--border-color-header);
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: var(--letter-spacing-02);
+        line-height: var(--line-height-16px-14px);
+    }
+
+    &__menu &__link {
+        color: var(--h-color);
+    }
+
+    &__menu &__link:hover,
+    &__menu &__link:focus {
+        color: var(--blue-color);
+    }
+
+    &__menu &__link:active {
+        color: var(--blue-color);
+    }
+
+    &__link {
+        position: relative;
+        padding: 32px 0px;
+    }
+
+    &__link.current::after {
+        display: block;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        content: '';
+        width: 100%;
+        height: 4px;
+        background-color: var(--blue-color);
+        border-radius: 2px;
+    }
+
+    &__link.current {
+        color: var(--blue-color);
+    }
+
+    .contacts {
+        margin-left: auto;
+
+        &__container {
+            align-items: center;
+            gap: 30px;
+            display: flex;
+            font-size: 14px;
+            line-height: var(--line-height-16px-14px);
+            font-weight: 500;
+            letter-spacing: var(--letter-spacing-02);
+        }
+        
+        &__link {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+            gap: 10px;
+            width: 100%;
+            height: 100%;
+            color: var(--p-color);
+
+            &:hover,
+            &:focus {
+                color: var(--blue-color);
+                fill: var(--blue-color);
+            }
+            
+            &:active {
+                color: var(--blue-color);
+                fill: var(--blue-color);
+            }
+        }
+        
+        &__icon {
+            width: 16px;
+            height: 12px;
+        }
+    }
+
+    &__burger {
+        display: none;
+    }
+}

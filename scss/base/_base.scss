@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: var(--letter-spacing-03);
+    font-size: 14px;
+    color: var(--h-color);
+}
+
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
