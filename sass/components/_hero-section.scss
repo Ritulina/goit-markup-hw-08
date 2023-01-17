@@ -3,11 +3,41 @@
     padding-bottom: 200px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)), url('../images/Hero_image.jpg'
+            rgba(47, 48, 58, 0.4)), url('../../images/Hero_image_480x400_1x.jpg'
         );
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi), 
+    (min-resolution: 2dppx) {
+        background-image: url(../../images/Hero_image_480x400_2x.jpg);
+    }
+    
+    @media (min-width: 768px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url('../../images/Hero_image_768x400_1x.jpg'
+        );
+       
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi), 
+        (min-resolution: 2dppx) {
+            background-image: url(../../images/Hero_image_768x400_2x.jpg);
+        }
+    }    
+
+    @media (min-width: 1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)), url('../../images/Hero_image_1600x600_1x.jpg'
+        );
+       
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi), 
+        (min-resolution: 2dppx) {
+            background-image: url(../../images/Hero_image_1600x600_2x.jpg);
+        }
+    }
 
     &__container {
         display: flex;
@@ -34,5 +64,4 @@
         }
     }
        
-        
 }

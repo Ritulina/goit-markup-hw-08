@@ -104,17 +104,35 @@
                 <div class="services__container">
                     <h2 class="subtitle">Чим ми займаємося</h2>
                     <ul class="services__image">
-                        <li class="services__item"><img src="./images/box_1.jpg" alt="Людина працює за комп'ютером" width="370">
-                        <div class="services__overlay">
-                            <p class="services__subtitle">Десктопні додатки</p>
-                        </div>
+                        <li class="services__item">
+                            <picture>
+                                <source srcset="
+                                ./images/box_1_1x.webp 1x, ./images/box_1_2x.webp 2x" type="image/webp"
+                                />
+                                <source srcset="./images/box_1_1x.jpg 1x, ./images/box_1_2x.jpg 2x" type="image/jpg"
+                                />
+                                <img src="./images/box_1.jpg" alt="Людина працює за комп'ютером" width="370">
+                            </picture>
+                            <div class="services__overlay">
+                                <p class="services__subtitle">Десктопні додатки</p>
+                            </div>
                         </li>
-                        <li class="services__item"><img src="./images/box_2.jpg" alt="Людина працює з телефону" width="370">
-                        <div class="services__overlay">
-                            <p class="services__subtitle">Мобільні додатки</p>
-                        </div>
+                        <li class="services__item">
+                            <picture>
+                                <source srcset="./images/box_2_1x.webp 1x, ./images/box_2_2x.webp 2x" type="image/webp"/>
+                                <source srcset="./images/box_2_1x.jpg 1x, ./images/box_2_2x.jpg 2x" type="image/jpg"/>
+                                <img src="./images/box_2.jpg" alt="Людина працює з телефону" width="370">
+                            </picture>
+                            <div class="services__overlay">
+                                <p class="services__subtitle">Мобільні додатки</p>
+                            </div>
                         </li>
-                        <li class="services__item"><img src="./images/box_3.jpg" alt="Людина працює з планшету" width="370">
+                        <li class="services__item">
+                            <picture>
+                                <source srcset="./images/box_3_1x.webp 1x, ./images/box_3_2x.webp 2x" type="image/webp"/>
+                                <source srcset="./images/box_3_1x.jpg 1x, ./images/box_3_2x.jpg 2x" type="image/jpg"/>
+                                <img src="./images/box_3.jpg" alt="Людина працює з планшету" width="370">
+                            </picture>  
                         <div class="services__overlay">
                             <p class="services__subtitle">Дизайнерські рішення</p>
                         </div>
@@ -130,7 +148,11 @@
                     <ul class="team__list">
                         <li class="team__member">
                             <div class="team__content">
-                                <img class="team__avatar" src="./images/team_1.jpg" alt="Фото Ігоря" width="270">
+                                <picture>
+                                    <source srcset="./images/team_1_1x.webp 1x, ./images/team_1_2x.webp 2x" type="image/webp"/>
+                                    <source srcset="./images/team_1_1x.jpg 1x, ./images/team_1_2x.jpg 2x" type="image/jpg"/>
+                                    <img class="team__avatar" src="./images/team_1_1x.jpg" alt="Фото Ігоря" width="270">
+                                </picture> 
                                 <div class="team__content-card">
                                     <h3 class="team__name">Ігор Дем'яненко</h3>
                                     <p class="team__descr">Frontend Developer</p>
@@ -169,7 +191,11 @@
                         </li>
                         <li class="team__member">
                             <div class="team__content">
-                                <img class="team__avatar" src="./images/team_2.jpg" alt="Фото Ольги" width="270">
+                                <picture>
+                                    <source srcset="./images/team_2_1x.webp 1x, ./images/team_2_2x.webp 2x" type="image/webp"/>
+                                    <source srcset="./images/team_2_1x.jpg 1x, ./images/team_2_2x.jpg 2x" type="image/jpg"/>
+                                    <img class="team__avatar" src="./images/team_2_1x.jpg" alt="Фото Ольги" width="270">
+                                </picture>
                                 <div class="team__content-card">
                                     <h3 class="team__name">Ольга Рєпіна</h3>
                                     <p class="team__descr">Product Designer</p>
@@ -208,7 +234,11 @@
                         </li>
                         <li class="team__member">
                             <div class="team__content">
-                                <img class="team__avatar" src="./images/team_3.jpg" alt="Фото Миколи" width="270">
+                                <picture>
+                                    <source srcset="./images/team_3_1x.webp 1x, ./images/team_3_2x.webp 2x" type="image/webp"/>
+                                    <source srcset="./images/team_3_1x.jpg 1x, ./images/team_3_2x.jpg 2x" type="image/jpg"/>
+                                    <img class="team__avatar" src="./images/team_3_1x" alt="Фото Миколи" width="270">
+                                </picture>
                                 <div class="team__content-card">
                                     <h3 class="team__name">Микола Тарасов</h3>
                                     <p class="team__descr">Marketing</p>
@@ -247,7 +277,11 @@
                         </li>
                         <li class="team__member">
                             <div class="team__content">
-                                <img class="team__avatar" src="./images/team_4.jpg" alt="Фото Михайла" width="270">
+                                <picture>
+                                    <source srcset="./images/team_4_1x.webp 1x, ./images/team_4_2x.webp 2x" type="image/webp"/>
+                                    <source srcset="./images/team_4_1x.jpg 1x, ./images/team_4_2x.jpg 2x" type="image/jpg"/>
+                                    <img class="team__avatar" src="./images/team_4_1x" alt="Фото Михайла" width="270">
+                                </picture>
                                 <div class="team__content-card">
                                     <h3 class="team__name">Михайло Єрмаков</h3>
                                     <p class="team__descr">UI Designer</p>

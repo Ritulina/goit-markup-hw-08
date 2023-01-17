@@ -18,7 +18,7 @@
             margin-left: 87px;
         }
 
-        @media (min-width: 1600px) {
+        @media (min-width: 1200px) {
             flex-grow: 1;
             padding-top: 32px;
             padding-bottom: 32px;
@@ -79,7 +79,7 @@
                 display: none;
             }
 
-        @media (min-width: 1600px) {
+        @media (min-width: 1200px) {
             margin-left: auto;
         }
 
@@ -97,7 +97,7 @@
                 padding: 21px 0 21px 96px;
             }
 
-            @media (min-width: 1600px) {
+            @media (min-width: 1200px) {
                 flex-direction: row;
                 padding: 0;
             }
@@ -108,7 +108,7 @@
                     padding-bottom: 10px;
                 }
             
-                @media (min-width: 1600px) {
+                @media (min-width: 1200px) {
                     padding-bottom: 0px;
                 }
         }

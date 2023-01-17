@@ -139,9 +139,13 @@ section {
 }
 
 .container {
-  width: 480px;
   padding: 0 15px 0 15px;
   margin: 0 auto;
+}
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
 }
 @media (min-width: 768px) {
   .container {
@@ -211,7 +215,7 @@ section {
     margin-left: 87px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .header__container {
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -271,7 +275,7 @@ section {
     display: none;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .header .contacts {
     margin-left: auto;
   }
@@ -298,7 +302,7 @@ section {
     padding: 21px 0 21px 96px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .header .contacts__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -312,7 +316,7 @@ section {
     padding-bottom: 10px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .header .contacts__item {
     padding-bottom: 0px;
   }
@@ -369,11 +373,38 @@ section {
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Hero_image.jpg");
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Hero_image.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Hero_image_480x400_1x.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Hero_image_480x400_1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/Hero_image_480x400_2x.jpg);
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Hero_image_768x400_1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Hero_image_768x400_1x.jpg");
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/Hero_image_768x400_2x.jpg);
+  }
+}
+@media (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/Hero_image_1600x600_1x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Hero_image_1600x600_1x.jpg");
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../../images/Hero_image_1600x600_2x.jpg);
+  }
 }
 .hero__container {
   display: -webkit-box;
@@ -671,7 +702,7 @@ section {
         flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .features__item {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
@@ -720,7 +751,7 @@ section {
     display: none;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .services {
     display: inline;
   }
@@ -809,7 +840,7 @@ section {
         flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .team__member {
     -ms-flex-preferred-size: calc((100% - 90px) / 4);
         flex-basis: calc((100% - 90px) / 4);
@@ -824,6 +855,10 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+.team__avatar {
+  display: block;
+  width: 100%;
 }
 .team__name {
   padding-bottom: 10px;
@@ -966,6 +1001,25 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+@media (min-width: 768px) {
+  .footer__container {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+@media (min-width: 1200px) {
+  .footer__container {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 .footer__references {
   display: -webkit-box;
@@ -989,7 +1043,7 @@ section {
             justify-content: left;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .footer__references {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -1026,15 +1080,11 @@ section {
             justify-content: left;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .footer__contacts {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
 }
 .footer__address {
@@ -1092,7 +1142,7 @@ section {
     padding-bottom: 102px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .footer__content {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -1115,7 +1165,7 @@ section {
     text-align: center;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .footer__subtitle {
     text-align: left;
   }
@@ -1138,7 +1188,7 @@ section {
             justify-content: left;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .footer__socials {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
@@ -1194,7 +1244,7 @@ section {
   padding-bottom: 60px;
   width: 100%;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .footer-form {
     padding-left: 92px;
     padding-top: 72px;
@@ -1236,7 +1286,7 @@ section {
     width: 450px;
   }
 }
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
   .footer-form__textarea {
     width: 358px;
     margin-right: 12px;
