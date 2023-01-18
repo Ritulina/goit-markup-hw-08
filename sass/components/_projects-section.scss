@@ -1,19 +1,46 @@
 .projects {
+    padding-top: 0;
+    padding-bottom: 0;
 
     &__container {
         display: flex;
         flex-direction: column;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        
+        @media (min-width: 1200px) {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
+        
     }
 
     &__buttons-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        margin-bottom: 50px;
+        justify-content: left;
+        padding-bottom: 40px;
+ 
+        @media (min-width: 768px) {
+            justify-content: center;
+        }
+        
+        @media (min-width: 1200px) {
+            justify-content: center;
+        }
     }
 
     &__buttons-item {
         margin-right: 8px;
+        margin-bottom: 15px;
+
+        @media (min-width: 768px) {
+            margin-bottom: 0;
+        }
+
+        @media (min-width: 1200px) {
+            margin-bottom: 0;
+        }
     }
 
     &__button {
@@ -26,6 +53,10 @@
         line-height: var(--line-height-26px-16px);
         border-radius: 4px;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:first-child {
+            min-width: 73px;
+        }
     }
 
     &__buttons-list &__button {
@@ -110,6 +141,16 @@
 
     &__cards-image {
         display: block;
+        width: 100%;
+        @media (min-width: 768px) {
+            flex-basis: calc((100% - 30px)/ 2);
+        }
+        
+        @media (min-width: 1200px) {
+            width: 370px;
+        }
+
+
     }
 
     &__cards-title {

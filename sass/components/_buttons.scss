@@ -43,7 +43,7 @@
 }
 
 .form-button {
-    margin-left: 124px;
+    margin-left: 84px;
     margin-top: 30px;
     padding: 10px 52px;
     max-width: 200px;
@@ -57,4 +57,8 @@
     letter-spacing: var(--letter-spacing-06);
     color: var(--white-color);
     border: none;
+
+    @media (min-width: 1200px) {
+        margin-left: 124px;
+   }
 }
