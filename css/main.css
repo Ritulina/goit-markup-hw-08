@@ -1456,7 +1456,7 @@ section {
   }
 }
 .projects__button {
-  padding: 6px 22px;
+  padding: 6px 24px;
   font-family: "Roboto";
   cursor: pointer;
   font-weight: 500;
@@ -1498,6 +1498,22 @@ section {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 30px;
+}
+.projects__cards-item {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+@media (min-width: 768px) {
+  .projects__cards-item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .projects__cards-item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 .projects__cards-link {
   display: block;
