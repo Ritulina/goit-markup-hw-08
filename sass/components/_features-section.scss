@@ -1,5 +1,9 @@
 .features {
     margin: 0 auto;
+
+    @media (min-width: 768px) {
+        padding-bottom: 60px;
+    }   
   
     @media (min-width: 1200px) {
         padding-bottom: 0;
