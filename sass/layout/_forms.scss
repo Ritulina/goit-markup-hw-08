@@ -110,18 +110,7 @@
     }
 
     &__checkbox-tems {
-        font-weight: 400;
-        font-size: 12px;
-        line-height: var(--line-height-14px-12px);
-        letter-spacing: var(--letter-spacing-03);
-        color: var(--blue-color);
-
-              
-        @media (min-width: 1200px) {
-            font-size: 14px;
-            line-height: var(--line-height-24px-14px);
-            letter-spacing: var(--letter-spacing-03);            
-        }
+        color: var(--blue-color);    
     }
 
     
@@ -129,6 +118,18 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    &__checkbox-label {
+        font-size: 12px;
+        line-height: var(--line-height-14px-12px);
+        letter-spacing: var(--letter-spacing-03);
+
+        @media (min-width: 1200px) {
+            font-size: 14px;
+            line-height: var(--line-height-24px-14px);
+            letter-spacing: var(--letter-spacing-03);            
+        }
     }
 
     &__checkbox-input {
