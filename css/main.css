@@ -694,6 +694,7 @@ section {
 
 .features {
   margin: 0 auto;
+  padding-bottom: 0;
 }
 .features__container {
   display: -webkit-box;
