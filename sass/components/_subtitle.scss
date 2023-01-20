@@ -1,5 +1,5 @@
 .subtitle {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
     font-weight: 700;
     font-size: 28px;
@@ -8,6 +8,7 @@
     color: var(--h-color);
     
     @media (min-width: 1200px) {
+        margin-bottom: 50px;
         font-size: 36px;
         line-height: var(--line-height-42px-36px);        
     }
